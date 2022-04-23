@@ -1,23 +1,24 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video 26</title>
+    <title>Video 28</title>
 </head>
 <body>
+    <ul>
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="contact.php">CONTACT</a></li>
+    </ul>
+
     <?php
-     // $GLOBALS
-    // $_POST
-    // $_GET
+    
+    echo $_SESSION['username'];
 
-    echo $_GET['name']
     ?>
-
-    <form method="GET">
-        <input type="hidden" name="name" value="Daniel">
-        <button type="submit">PRESS ME!</button>
-    </form>
 </body>
 </html>
